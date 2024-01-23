@@ -3,20 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development course assignment portal for Hyrum Bullock"
+    />
+
+    <title>"Hyrum Bullock - WDD 230 - Web Frontend Development"</title>
+
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <img src="images/image-of-me.jpg" alt="picture of  me" />
+      <span>Hyrum Bullock</span>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">chamber</a>
+      <a href="#">Site Plan</a>
+      <a href="#">form</a>
+    </nav>
     <main>
-      <h1>Welcome to nowhere (yet)</h1>
-    </main>
-    <p></p>
-    <p></p>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <div class="card-container">
+        <section class="card">
+          <div class="card-title">
+          <h2>Learning Activities</h2>
+          </div>
+          <ul>
+            <li><a href="./week_01/index.html">week 01</a></li>
+            <li><a href="#">week 02</a></li>
+            <li><a href="#">week 03</a></li>
+            <li><a href="#">week 04</a></li>
+          </ul>
+        </section>
 
-    <footer></footer>
-    <script src="scripts/index.js"></script>
+        <section class="card">
+          <div class="card-title">
+          <h2>Information</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p id="year">Hyrum Bullock Canada</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
   </body>
 </html>

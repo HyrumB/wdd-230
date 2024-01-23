@@ -1,0 +1,136 @@
+
+
+/*
+// html selector - multi use 
+h1 { 
+    color: red;
+}
+
+// id selector - 1 use
+#name {
+    color: blue;
+}
+
+ class selector - multi use 
+.yellow {
+    color: yellow
+}
+
+*/
+
+:root {
+    /* vars to hold colours */
+    --background: #121212;
+    --accent1: #239D60;
+    --accent2: #40394A;
+    --accent3: #7ECA9C;
+  }
+
+/* body CSS */
+
+body {
+    /* spacing */
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    /* text  */
+    font-size:  22px;
+    color: var(--accent1);
+}
+
+/* header CSS */
+
+header {
+    /* spacing */
+    background-color: var(--accent1);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    /* text  */
+    text-align: center;
+    text-decoration: none;
+    color: var(--background);
+
+
+    
+}
+span {
+    align-self: center;
+    font-size: 2.5em;
+}
+img {
+    width: 100px;
+    justify-content: flex-start;
+}
+
+/* nav CSS*/
+nav{
+    background-color: var(--accent2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav a { 
+    
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--accent1);
+}
+   
+
+nav a:hover {
+    background-color: var(--accent3);
+    color: var(--accent2);
+}
+
+/* Main CSS */
+main {
+    text-align: center;
+    background-color: var(--background);    
+}
+
+/* cards CSS */
+.card-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.card {
+
+    background-color: var(--accent2);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+li, a{
+    text-decoration: none;
+    color: var(--accent1);
+}
+
+.card-title {
+    padding-top: .5em;
+    height: 100px;
+    background-color: var(--accent1);
+    color: var(--accent2);
+}
+
+/* Footer CSS */
+
+footer {
+    
+    color: var(--background);
+    background-color: var(--accent1);
+    padding: 25px 50px;
+    margin-top: 200px;
+    
+    /* puts footer on the bottom */  
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
