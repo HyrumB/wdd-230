@@ -1,4 +1,4 @@
-
+/* menu symbol &#9776 */
 
 /*
 // html selector - multi use 
@@ -19,118 +19,168 @@ h1 {
 */
 
 :root {
-    /* vars to hold colours */
-    --background: #121212;
-    --accent1: #239D60;
-    --accent2: #40394A;
-    --accent3: #7ECA9C;
-  }
+  /* vars to hold colours */
+  --background: #121212;
+  --accent1: #40b374;
+  --accent2: #37303f;
+  --accent3: #85d2a3;
+  /* --linktext:  */
+}
 
+.light {
+  --background: #fcfcff;
+  --accent1: #00411e;
+  --accent2: #C4C8D4; 
+  --accent3: #235839;
+}
 /* body CSS */
 
 body {
-    /* spacing */
-    background-color: var(--background);
-    margin: 0;
-    padding: 0;
-    /* text  */
-    font-size:  22px;
-    color: var(--accent1);
+  /* spacing */
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  /* text  */
+  font-size: 22px;
+  color: var(--accent1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* header CSS */
 
 header {
-    /* spacing */
-    background-color: var(--accent1);
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    /* text  */
-    text-align: center;
-    text-decoration: none;
-    color: var(--background);
-
-
-    
+  /* spacing */
+  background-color: var(--accent1);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  /* text  */
+  text-align: center;
+  text-decoration: none;
+  color: var(--background);
 }
+
 span {
-    align-self: center;
-    font-size: 2.5em;
+  align-self: center;
+  font-size: 2.5em;
 }
 img {
-    width: 100px;
-    justify-content: flex-start;
+  width: 100px;
+  justify-content: flex-start;
+}
+/* button */
+
+#mode {
+  position: absolute;
+  color: var(--background);
+  background: none;
+  outline: none;
+  border: 0;
+  top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+  margin-right: 10px;
+}
+
+#mode::before{
+  content: "\274A";
+}
+#mode.open::before {
+  content: "\25CD";
+  padding: 5px;
+}
+
+/* Menu CSS */
+/* when the button is clicked - the open class is toggled (added/removed) */
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: var(--background);
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "X";
+  padding: 5px;
+}
+
+.hidden { 
+  display: none;
 }
 
 /* nav CSS*/
-nav{
-    background-color: var(--accent2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
+nav {
+  background-color: var(--accent2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-nav a { 
-    
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    color: var(--accent1);
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  color: var(--accent1);
 }
-   
 
 nav a:hover {
-    background-color: var(--accent3);
-    color: var(--accent2);
+  background-color: var(--accent3);
+  color: var(--accent2);
 }
+
 
 /* Main CSS */
 main {
-    text-align: center;
-    background-color: var(--background);    
+  text-align: center;
+  background-color: var(--background);
 }
 
 /* cards CSS */
-.card-container{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .card {
-
-    background-color: var(--accent2);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
+  background-color: var(--accent2);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 
-li, a{
-    text-decoration: none;
-    color: var(--accent1);
+li,
+a {
+  text-decoration: none;
+  color: var(--accent3);
 }
 
 .card-title {
-    padding-top: .5em;
-    height: 100px;
-    background-color: var(--accent1);
-    color: var(--accent2);
+  padding-top: 0.5em;
+  height: 100px;
+  background-color: var(--accent1);
+  color: var(--accent2);
 }
 
 /* Footer CSS */
 
 footer {
-    
-    color: var(--background);
-    background-color: var(--accent1);
-    padding: 25px 50px;
-    margin-top: 200px;
-    
-    /* puts footer on the bottom */  
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
+  color: var(--background);
+  background-color: var(--accent1);
+  padding: 25px 50px;
+  margin-top: 200px;
+
+  /* puts footer on the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
 }

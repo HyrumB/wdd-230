@@ -1,6 +1,17 @@
 @media only screen and (min-width: 32em) {
+    /* hide menu */
+    
+    /* #mode {
 
+    } */
 
+    #menu {
+		display: none; 
+	}
+
+    .hidden{
+        display: flex;
+    }
     /* nav CSS */
     nav {
         flex-direction: row;
