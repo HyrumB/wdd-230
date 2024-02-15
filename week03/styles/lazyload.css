@@ -7,8 +7,10 @@ main {
     justify-content: center;
     grid-template-columns: 0;
 }
+
 img{
     margin: 150px;
     justify-self: center;
     width: 400px;
 }
+
