@@ -124,14 +124,13 @@ main {
 }
 
 /* picture CSS */
-
-picture{
+picture {
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
 #hero {
   /* Basic Layout */
   flex: auto;
@@ -139,7 +138,14 @@ picture{
   display: block;
   align-items: center;
   /* object-fit: cover; */
+}
 
+.herolabel {
+  position: absolute;
+  background-color: var(--background);
+  top: 300px;
+  left: 30px;
+  padding: 15px;
 }
 
 /* cards CSS */
@@ -156,6 +162,7 @@ picture{
   margin-top: 20px;
 }
 
+
 li,
 a {
   text-decoration: none;
@@ -167,6 +174,10 @@ a {
   height: 100px;
   background-color: var(--accent1);
   color: var(--accent2);
+}
+
+.info {
+  padding: 15px;
 }
 
 /* frame CSS */

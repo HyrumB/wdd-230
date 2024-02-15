@@ -44,20 +44,25 @@
     </nav>
 
     <main>
-      <picture id="hero">
-        <source
-          srcset="images/cardston-alberta-temple_small.webp"
-          media="(max-width: 480px)"
-        />
-        <source
-          srcset="images/cardston-alberta-temple_medium.webp"
-          media="(max-width: 768px)"
-        />
-        <img
-          src="images/cardston-alberta-temple_cropped.webp"
-          alt="Image of the cardston temple"
-        />
-      </picture>
+      <div>
+        <picture id="hero">
+          <source
+            srcset="images/cardston-alberta-temple_small.webp"
+            media="(max-width: 480px)"
+          />
+          <source
+            srcset="images/cardston-alberta-temple_medium.webp"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="images/cardston-alberta-temple_cropped.webp"
+            alt="Image of the cardston temple"
+          />
+        </picture>
+        <div class="herolabel">
+          <p>Cardston Temple</p>
+        </div>
+      </div>
       <h1>WDD 230: Web Frontend Development</h1>
       <div class="card-container">
         <section class="card">
@@ -91,13 +96,16 @@
           <div class="card-title">
             <h2>Information</h2>
           </div>
+          <div class="info">
+            <a id="visitCountDisplay"> youve been here </a>
+          </div>
         </section>
       </div>
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.1414113507935!2d-80.46941920326879!3d43.41587209327371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf537388e592d%3A0x4779a1dc04df2d4!2s67%20Brisbane%20Dr%2C%20Kitchener%2C%20ON%20N2C%202T6%2C%20Canada!5e0!3m2!1sen!2sus!4v1708010233722!5m2!1sen!2sus"
-        width="600"
-        height="450"
+        width="70%"
+        height="450px"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -111,5 +119,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/buttons.js"></script>
+    <script src="scripts/storeVisits.js"></script>
   </body>
 </html>
