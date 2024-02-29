@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon32.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development course assignment portal for Hyrum Bullock"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="WDD-130 landing page" />
+    <meta
+      property="og:description"
+      content="a landing page designed to provide easy access to what ive made for my wdd130 class"
+    />
+    <meta
+      property="og:image"
+      content="images/GoogleOntario2014.webp"
+      alt="Google maps photo of my old home in ontario from when I lived there"
+    />
+    <meta property="og:url" content="https://hyrumb.github.io/wdd-230/" />
+    <meta property="og:type" content="website" />
+    <meta charset="UTF-8" />
+    <meta author="Hyrum B" />
+
+    <title>"Hyrum Bullock - WDD 230 - Web Frontend Development"</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css"/>
+  </head>
+
+  <body>
+    <header>
+      <img class="owner" src="images/image-of-me.webp" alt="picture of  me" />
+      <span>Hyrum Bullock</span>
+    </header>
+    <button id="mode"></button>
+    <button id="menu"></button>
+    <nav class="navigation hidden">
+      <a href="index.html">Home</a>
+      <a href="#">chamber</a>
+      <a href="#">Site Plan</a>
+      <a href="#">form</a>
+    </nav>
+
+    <main>
+      <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="yes" />
+        <label for="password">password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required="yes"
+          pattern="[A-Za-z0-9]{8}"
+        />
+        <label for="password">password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required="yes"
+          pattern="[A-Za-z0-9]{8}"
+        />
+        <label for="email">email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required="yes"
+          pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+          title="Please enter a valid email address"
+        />
+        <label for="rating">Rating (1-10):</label>
+        <div id="rangevalue">0</div>
+        <input
+          type="range"
+          id="rating"
+          name="rating"
+          min="1"
+          max="10"
+          step="1"
+          list="rangevalues"
+        />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p id="year">Hyrum Bullock Canada</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>

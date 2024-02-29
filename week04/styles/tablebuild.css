@@ -1,0 +1,39 @@
+table,
+tr,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px;
+  caption-side: bottom;
+  
+}
+
+tr, th {
+  background-color: black;
+  color: #fff;
+}
+.grey{
+  background-color: #777474;
+}
+
+th {
+  /* width: 100%; */
+  text-align: center; /* Optional for centering the text */
+}
+
+td {
+  text-align: center;
+  color: #000;
+}
+
+
+
+tbody tr:nth-child(even) {
+  background-color: #beb9b9; /* Light gray for even children */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff; /* White for odd children */
+}
+
