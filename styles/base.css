@@ -162,7 +162,6 @@ picture {
   margin-top: 20px;
 }
 
-
 li,
 a {
   text-decoration: none;
@@ -189,6 +188,7 @@ iframe {
 /* Footer CSS */
 
 footer {
+  position: fixed;
   color: var(--background);
   background-color: var(--accent1);
   padding: 25px 50px;
