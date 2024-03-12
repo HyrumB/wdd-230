@@ -1,0 +1,43 @@
+main{
+  display: flex;
+  justify-content: center;}
+
+#cards {
+  /* max-width: 1600px; */
+  display: grid;
+  grid-gap: auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(108, 120, 145);
+  outline: 1px solid black;
+  justify-content: center;
+  align-items: center; 
+  margin: 5px;
+  padding: 5px;
+
+  max-width: 450px;
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+  font-size: 35px;
+}
+
+p {
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+img {
+  box-shadow: 5px 5px 30px black;
+  width: 230px;
+  height: auto;
+  margin: 5px;
+}
