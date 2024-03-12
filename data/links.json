@@ -1,0 +1,43 @@
+[
+  {
+    "week": "week02",
+    "links": [
+      { "url": "week02/index.html", "title": "style" },
+      { "url": "week02/bom.html", "title": "DOM activity" },
+      {
+        "url": "https://codepen.io/Hyrum-Bullock/pen/VwRrZem",
+        "title": "CodePen"
+      }
+    ]
+  },
+  {
+    "week": "week03",
+    "links": [
+      { "url": "week03/images/landscape.webp", "title": "webp" },
+      { "url": "week03/lazyload.html", "title": "lazyload" },
+      { "url": "week03/bom.html", "title": "LocalStorage" }
+    ]
+  },
+  {
+    "week": "week04",
+    "links": [
+      {
+        "url": "https://codepen.io/Hyrum-Bullock/pen/dyrEqQZ",
+        "title": "Pseudo-classes"
+      },
+      { "url": "week04/tablebuild.html", "title": "table" }
+    ]
+  },
+  {
+    "week": "week05",
+    "links": [
+      {
+        "url": "https://codepen.io/Hyrum-Bullock/pen/dyLorMN",
+        "title": "Pseudo-classes2"
+      },
+      { "url": "week05/new-ward-members.json", "title": "json" },
+      { "url": "week05/prophets.html", "title": "fetch" },
+      { "url": "week05/weather.html", "title": "weather" }
+    ]
+  }
+]

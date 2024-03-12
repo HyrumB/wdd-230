@@ -7,6 +7,12 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
+// toronto
+// const lat = 43.653226
+// const lon = -79.3831843
+
+
+// rexburg
 const lat =  43.82311337228061
 const lon = -111.79273204287576
 
@@ -39,4 +45,4 @@ function displayresults(data) {
   captionDesc.textContent = `${desc}`;
 }
 
-apiFetch()
+// apiFetch()
