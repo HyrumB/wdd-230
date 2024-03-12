@@ -168,6 +168,8 @@ a {
   color: var(--accent3);
 }
 
+
+
 .card-title {
   padding-top: 0.5em;
   height: 100px;
@@ -177,6 +179,7 @@ a {
 
 .info {
   padding: 15px;
+  color: var(--accent3);;
 }
 
 /* frame CSS */
