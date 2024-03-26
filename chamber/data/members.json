@@ -1,0 +1,82 @@
+
+export const companies = {
+  
+  {
+
+    "name": "Technovation Inc.",
+    "address": "1 Infinite Loop, Cupertino, CA 95014",
+    "phoneNumber": "+1 650 253 8000",
+    "websiteUrl": "https://www.apple.com",
+    "image": {
+      "imageHyperlink": "https://www.apple.com/ac/sites/apple.com/files/images/apple/home/home/inline/hero_image.jpg",
+      "fileName": "technovation.png"
+    },
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Amazon.com, Inc.",
+    "address": "4400 S. Virginia St., Reno, NV 89502",
+    "phoneNumber": "+1 888-280-4331",
+    "websiteUrl": "https://www.amazon.com",
+    "image": {
+      "imageHyperlink": "https://images-na.ssl-images-amazon.com/images/G/01/gc/harris/email/amazon_logo_email.png",
+      "fileName": "amazon.jpg"
+    },
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Wikimedia Foundation",
+    "address": "1 Montgomery St., Suite 300, San Francisco, CA 94104",
+    "phoneNumber": "+1 415-833-6200",
+    "websiteUrl": "https://www.wikimedia.org",
+    "image": {
+      "imageHyperlink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wikipedia_logo.svg/2000px-Wikipedia_logo.svg.png",
+      "fileName": "wikimedia.svg"
+    },
+    "membershipLevel": "non-profit"
+  },
+  {
+    "name": "Tesla, Inc.",
+    "address": "13101 Tesla Road, Austin, TX 78725",
+    "phoneNumber": "+1 512-260-1800",
+    "websiteUrl": "https://www.tesla.com",
+    "image": {
+      "imageHyperlink": "https://static-assets.tesla.com/x/tesla-logo/svg/tesla-logo.svg",
+      "fileName": "tesla.jpg"
+    },
+    "membershipLevel": "bronze"
+  },
+  {
+    "name": "Microsoft Corporation",
+    "address": "One Microsoft Way, Redmond, WA 98052",
+    "phoneNumber": "+1 800-642-7676",
+    "websiteUrl": "https://www.microsoft.com",
+    "image": {
+      "imageHyperlink": "https://www.microsoft.com/en-us/microsoft-365/business/images/microsoft-365_en-us.svg",
+      "fileName": "microsoft.svg"
+    },
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Meta Platforms, Inc.",
+    "address": "1 Hacker Way, Menlo Park, CA 94025",
+    "phoneNumber": "+1 650-543-0000",
+    "websiteUrl": "https://www.facebook.com",
+    "image": {
+      "imageHyperlink": "https://static.xx.fbcdn.net/rsrc.php/z52N/y/h/fc/n569937_47964_266447522_n.png",
+      "fileName": "meta.png"
+    },
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Linux Foundation",
+    "address": "The Linux Foundation, 650 Castro Street Suite 600, Mountain View, CA 94041",
+    "phoneNumber": "+1 650-810-0890",
+    "websiteUrl": "https://www.linuxfoundation.org",
+    "image": {
+      "imageHyperlink": "https://www.linuxfoundation.org/",
+      "fileName": "linux.png"
+    },
+    "membershipLevel": "non-profit" 
+  }   
+}

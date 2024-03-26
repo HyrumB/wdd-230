@@ -1,0 +1,245 @@
+:root {
+  /* #5656A4
+    #FAD505
+    #8DD685
+    #DFE2DF 
+
+    rgb(45, 113, 97)
+    rgb(150, 0, 8)*/
+  /* vars to hold colours */
+  --text: #ffffff;
+  --background: rgb(42, 57, 100);
+  --accent1: #121212;
+  --accent2: #3e4b81;
+  --accent3: #40b374;
+  /* --linktext:  */
+}
+
+body {
+  /* spacing */
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+
+  /* text  */
+  font-size: 22px;
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* header CSS */
+
+header {
+  /* spacing */
+  background-color: var(--accent1);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  flex-direction: row;
+  flex-basis: 100%;
+
+  /* text  */
+  text-decoration: none;
+  color: var(--text);
+}
+
+header span {
+  justify-self: flex-start;
+}
+
+header img {
+  width: 45px;
+  height: auto;
+}
+
+header nav {
+  /* spacing */
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 20px;
+  color: var(--text);
+  vertical-align: bottom;
+}
+
+nav a:hover {
+  color: var(--accent3);
+}
+
+/* button CSS */
+#menu {
+  background-color: var(--accent1);
+  appearance: none;
+  border: none; 
+}
+
+#menu::before {
+  color: var(--text);
+  content: "\2630";
+}
+
+.hidden {
+  display: none;
+}
+
+/* temperary spacing */
+main {
+  min-height: 10, 000px;
+}
+
+/* heroimg CSS */
+
+.heroDiv {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.heroPhoto img {
+  overflow: hidden;
+  justify-self: center;
+  width: 100%;
+  height: auto;
+}
+
+/* cards CSS */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  color: var(--text);
+}
+
+.card {
+  height: fit-content;
+  background-color: var(--accent2);
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.card-title {
+  text-decoration: underline;
+  text-decoration-color: var(--accent3);
+}
+
+#event-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40%;
+  row-gap: 10px;
+}
+
+.event {
+  background-color: var(--accent1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: fit-content;
+  width: auto;
+
+  margin: 10px;
+  padding-bottom: 10px;
+}
+.event p {
+  font-size: 18px;
+  margin: 0px;
+  padding: 5px;
+  align-self: center;
+}
+
+#event-container img {
+  width: 90%;
+  height: auto;
+  align-self: center;
+}
+
+/* form CSS */
+
+form {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  height: auto;
+  max-width: 400px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+label {
+  margin-top: 35px;
+}
+
+/* footer CSS */
+
+footer {
+  display: flex;
+  flex: auto;
+  color: var(--text);
+  background-color: var(--accent1);
+  text-align: center;
+  padding: 15px;
+
+  /* puts footer on the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+/* large screens */
+@media only screen and (min-width: 32em) {
+
+
+  /* .card {
+    height: 450px;
+    width: 700px;
+      
+  } */
+
+  #events {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+
+  #event-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-title {
+    margin-left: 10px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-bottom: 60px;
+  }
+
+  .event {
+    outline: 1px solid var(--accent2);
+  }
+
+  #weather {
+    margin-left: 2%;
+  }
+}
