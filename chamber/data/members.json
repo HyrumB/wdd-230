@@ -1,82 +1,81 @@
-
-export const companies = {
-  
-  {
-
-    "name": "Technovation Inc.",
-    "address": "1 Infinite Loop, Cupertino, CA 95014",
-    "phoneNumber": "+1 650 253 8000",
-    "websiteUrl": "https://www.apple.com",
-    "image": {
-      "imageHyperlink": "https://www.apple.com/ac/sites/apple.com/files/images/apple/home/home/inline/hero_image.jpg",
-      "fileName": "technovation.png"
+{
+  "members": [
+    {
+      "name": "NOT Technovation Inc.",
+      "address": "1 Infinite Loop, Cupertino, CA 95014",
+      "phoneNumber": "+1 650 253 8000",
+      "websiteUrl": "https://www.apple.com",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_logo_Think_Different_vectorized.svg/320px-Apple_logo_Think_Different_vectorized.svg.png",
+        "fileName": "technovation.png"
+      },
+      "membershipLevel": "gold"
     },
-    "membershipLevel": "gold"
-  },
-  {
-    "name": "Amazon.com, Inc.",
-    "address": "4400 S. Virginia St., Reno, NV 89502",
-    "phoneNumber": "+1 888-280-4331",
-    "websiteUrl": "https://www.amazon.com",
-    "image": {
-      "imageHyperlink": "https://images-na.ssl-images-amazon.com/images/G/01/gc/harris/email/amazon_logo_email.png",
-      "fileName": "amazon.jpg"
+    {
+      "name": "NOT Amazon.com, Inc.",
+      "address": "4400 S. Virginia St., Reno, NV 89502",
+      "phoneNumber": "+1 888-280-4331",
+      "websiteUrl": "https://www.amazon.com",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/603px-Amazon_logo.svg.png?20220213013322",
+        "fileName": "amazon.jpg"
+      },
+      "membershipLevel": "silver"
     },
-    "membershipLevel": "silver"
-  },
-  {
-    "name": "Wikimedia Foundation",
-    "address": "1 Montgomery St., Suite 300, San Francisco, CA 94104",
-    "phoneNumber": "+1 415-833-6200",
-    "websiteUrl": "https://www.wikimedia.org",
-    "image": {
-      "imageHyperlink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wikipedia_logo.svg/2000px-Wikipedia_logo.svg.png",
-      "fileName": "wikimedia.svg"
+    {
+      "name": "NOT Wikimedia Foundation",
+      "address": "1 Montgomery St., Suite 300, San Francisco, CA 94104",
+      "phoneNumber": "+1 415-833-6200",
+      "websiteUrl": "https://www.wikimedia.org",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wikimedia_Foundation_logo_-_vertical.svg",
+        "fileName": "wikimedia.svg"
+      },
+      "membershipLevel": "non-profit"
     },
-    "membershipLevel": "non-profit"
-  },
-  {
-    "name": "Tesla, Inc.",
-    "address": "13101 Tesla Road, Austin, TX 78725",
-    "phoneNumber": "+1 512-260-1800",
-    "websiteUrl": "https://www.tesla.com",
-    "image": {
-      "imageHyperlink": "https://static-assets.tesla.com/x/tesla-logo/svg/tesla-logo.svg",
-      "fileName": "tesla.jpg"
+    {
+      "name": "NOT Tesla, Inc.",
+      "address": "13101 Tesla Road, Austin, TX 78725",
+      "phoneNumber": "+1 512-260-1800",
+      "websiteUrl": "https://www.tesla.com",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tesla_Motors_Logo.svg/320px-Tesla_Motors_Logo.svg.png",
+        "fileName": "tesla.jpg"
+      },
+      "membershipLevel": "bronze"
     },
-    "membershipLevel": "bronze"
-  },
-  {
-    "name": "Microsoft Corporation",
-    "address": "One Microsoft Way, Redmond, WA 98052",
-    "phoneNumber": "+1 800-642-7676",
-    "websiteUrl": "https://www.microsoft.com",
-    "image": {
-      "imageHyperlink": "https://www.microsoft.com/en-us/microsoft-365/business/images/microsoft-365_en-us.svg",
-      "fileName": "microsoft.svg"
+    {
+      "name": "NOT Microsoft Corporation",
+      "address": "One Microsoft Way, Redmond, WA 98052",
+      "phoneNumber": "+1 800-642-7676",
+      "websiteUrl": "https://www.microsoft.com",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/320px-Microsoft_logo_%282012%29.svg.png",
+        "fileName": "microsoft.svg"
+      },
+      "membershipLevel": "gold"
     },
-    "membershipLevel": "gold"
-  },
-  {
-    "name": "Meta Platforms, Inc.",
-    "address": "1 Hacker Way, Menlo Park, CA 94025",
-    "phoneNumber": "+1 650-543-0000",
-    "websiteUrl": "https://www.facebook.com",
-    "image": {
-      "imageHyperlink": "https://static.xx.fbcdn.net/rsrc.php/z52N/y/h/fc/n569937_47964_266447522_n.png",
-      "fileName": "meta.png"
+    {
+      "name": "NOT Meta Platforms, Inc.",
+      "address": "1 Hacker Way, Menlo Park, CA 94025",
+      "phoneNumber": "+1 650-543-0000",
+      "websiteUrl": "https://www.facebook.com",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Meta_Logo.jpg/320px-Meta_Logo.jpg",
+        "fileName": "meta.png"
+      },
+      "membershipLevel": "silver"
     },
-    "membershipLevel": "silver"
-  },
-  {
-    "name": "Linux Foundation",
-    "address": "The Linux Foundation, 650 Castro Street Suite 600, Mountain View, CA 94041",
-    "phoneNumber": "+1 650-810-0890",
-    "websiteUrl": "https://www.linuxfoundation.org",
-    "image": {
-      "imageHyperlink": "https://www.linuxfoundation.org/",
-      "fileName": "linux.png"
-    },
-    "membershipLevel": "non-profit" 
-  }   
+    {
+      "name": "NOT Linux Foundation",
+      "address": "The Linux Foundation, 650 Castro Street Suite 600, Mountain View, CA 94041",
+      "phoneNumber": "+1 650-810-0890",
+      "websiteUrl": "https://www.linuxfoundation.org",
+      "image": {
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Linux_Foundation_logo_2007.svg/320px-Linux_Foundation_logo_2007.svg.png",
+        "fileName": "linuxfoundation.png"
+      },
+      "membershipLevel": "non-profit"
+    }
+  ]
 }
