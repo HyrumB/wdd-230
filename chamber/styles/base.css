@@ -43,6 +43,8 @@ header {
 }
 
 header span {
+  display: flex;
+  flex-direction: row;
   justify-self: flex-start;
 }
 
@@ -52,6 +54,9 @@ header img {
 }
 
 header nav {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
   /* spacing */
   justify-self: flex-end;
   align-self: flex-end;
@@ -69,11 +74,11 @@ nav a:hover {
   color: var(--accent3);
 }
 
-/* button CSS */
+/* nav button CSS */
 #menu {
   background-color: var(--accent1);
   appearance: none;
-  border: none; 
+  border: none;
 }
 
 #menu::before {
@@ -82,7 +87,37 @@ nav a:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--accent2);
+  color: var(--text);
+  text-align: center;
+  padding: 15px;
+}
+
+.banner #closebanner {
+  /* spacing */
+  /* position: absolute;
+  top: 88px;
+  right: 5px; */
+  display: flex;
+  /* apperance */
+  background-color: var(--accent2);
+  appearance: none;
+  border: none;
+  color: var(--text);
+  padding: 10px;
+}
+
+#banner button:hover {
+  color: var(--accent3);
 }
 
 /* temperary spacing */
@@ -157,7 +192,7 @@ main {
 }
 
 #event-container img {
-  width: 90%;
+  width: 85%;
   height: auto;
   align-self: center;
 }
@@ -200,14 +235,28 @@ footer p {
 }
 
 /* large screens */
-@media only screen and (min-width: 32em) {
-
-
+@media only screen and (min-width: 40em) {
   /* .card {
     height: 450px;
     width: 700px;
       
   } */
+
+  header p {
+    font-size: 25px;
+  }
+
+  header nav {
+    /* spacing */
+    flex-direction: row;
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding: 20px;
+  }
+
+  #menu {
+    display: none;
+  }
 
   #events {
     background-color: #121212;
@@ -231,7 +280,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     margin-bottom: 60px;
   }
 
