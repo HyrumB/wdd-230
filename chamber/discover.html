@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <!-- <link rel="icon" href="favicon32.ico" type="image/x-icon" /> -->
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -15,14 +14,14 @@
       property="og:description"
       content="a website made to mimic what a chamber of commerce for the city of toronto could be"
     />
-    <meta property="og:image" content="#" alt="image of toronto" />
+    <meta property="og:image" content="images/toronto_skyline_small" />
     <meta
       property="og:url"
       content="https://hyrumb.github.io/wdd-230/chamber/index.html"
     />
     <meta property="og:type" content="website" />
     <meta charset="UTF-8" />
-    <meta author="Hyrum B" />
+    <!-- <meta author="Hyrum B" /> -->
 
     <title>"Toronto chamber of commerce"</title>
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -31,10 +30,10 @@
 
   <body>
     <header>
-      <span>
+      <div>
         <img class="owner" src="images/leaf.webp" alt="canadian leaf" />
         <p>Toronto</p>
-      </span>
+      </div>
       <button id="menu"></button>
       <nav class="navigation">
         <a href="index.html">home</a>
@@ -48,11 +47,10 @@
       <div id="info-card-container">
         <div class="card">
           <h2>Visits</h2>
-          <p id ="visit-message">
+          <p id="visit-message"></p>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
-            porttitor lacus luctus accumsan. Mi tempus imperdiet nulla malesuada
-            pellentesque elit eget.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div class="card">
@@ -70,33 +68,33 @@
       </div>
       <div id="image-container">
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-1.webp"
+          alt="image of cool location"
           loading="lazy"
         />
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-2.webp"
+          alt="image of cool location"
           loading="lazy"
         />
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-3.webp"
+          alt="image of cool location"
           loading="lazy"
         />
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-4.webp"
+          alt="image of cool location"
           loading="lazy"
         />
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-5.webp"
+          alt="image of cool location"
           loading="lazy"
         />
         <img
-          src="images/event-4.webp"
-          alt="image of upcoming event"
+          src="images/discover-6.webp"
+          alt="image of cool location"
           loading="lazy"
         />
       </div>
@@ -104,7 +102,7 @@
 
     <footer>
       <p id="year">
-        &copy; | Toronto Chambers Home Page | Hyrum Bullock | Current Date:
+        &copy; | Toronto Chamber discover Page | Hyrum Bullock | Current Date:
         <span id="currentdate"></span>
       </p>
       <p id="lastModified"></p>

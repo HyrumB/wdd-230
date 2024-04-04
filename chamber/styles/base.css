@@ -42,7 +42,7 @@ header {
   color: var(--text);
 }
 
-header span {
+header div {
   display: flex;
   flex-direction: row;
   justify-self: flex-start;
@@ -479,5 +479,10 @@ footer p {
 
   #discover-pg #info-card-container{
     grid-template-rows: .2fr .5fr;
+  }
+
+  #image-container img:hover {
+
+    outline: 1px solid var(--accent3);
   }
 }
