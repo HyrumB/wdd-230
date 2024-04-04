@@ -94,20 +94,23 @@ nav a:hover {
 /* banner */
 
 .banner {
+  /* spacing */
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  padding: 15px;
+
+  /* apperance */
   background-color: var(--accent2);
   color: var(--text);
   text-align: center;
-  padding: 15px;
+  
 }
 
 .banner #closebanner {
   /* spacing */
-  /* position: absolute;
-  top: 88px;
-  right: 5px; */
   display: flex;
+
   /* apperance */
   background-color: var(--accent2);
   appearance: none;
@@ -120,9 +123,10 @@ nav a:hover {
   color: var(--accent3);
 }
 
-/* temperary spacing */
+/* base main CSS */
 main {
-  min-height: 10, 000px;
+  min-height: 1200px;
+  /* min-height: 100; */
 }
 
 /* heroimg CSS */
@@ -183,7 +187,9 @@ main {
 
   margin: 10px;
   padding-bottom: 10px;
+  padding-top: 15px;
 }
+
 .event p {
   font-size: 18px;
   margin: 0px;
@@ -201,10 +207,11 @@ main {
 
 #spotlight-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: fit-content;
+  
   color: var(--text);
 }
 
@@ -213,12 +220,28 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: var(--accent2);
+
+  /* spacing */
+
+  min-width: 400px;
+  height: fit-content;
+  width: 25%;
   padding: 10px;
-  margin: 15px;
+  margin: 35px;
+
   /* text */
   text-decoration: none;
   color: var(--text);
 }
+
+.image-container {
+  height: fit-content;
+}
+
+/* .spotlight-card img {
+  width: 200px; 
+  height: 100px;
+} */
 
 .spotlight-card a {
   text-decoration: none;
@@ -229,27 +252,121 @@ main {
   color: var(--accent3);
   
 }
-.spotlight-card img {
-  width: 200px; 
-  height: 100px;
+
+/* join page CSS */
+#joinpg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
 }
+
+#join-form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--accent1);
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+
+#description {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent1);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+
 
 
 /* form CSS */
 
+
 form {
+  /* apperance */
   display: flex;
-  margin: 20px;
   flex-direction: column;
   height: auto;
   max-width: 400px;
+  
+  /* spacing */
   padding-top: 20px;
-  margin: auto;
+  margin: 20px;
 }
 
 label {
   margin-top: 35px;
 }
+
+/* landing page */
+#landing-pg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* directory */
+
+#discover-pg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#discover-pg #info-card-container{
+  display: grid;
+  grid-template-rows: .3fr 1fr;
+}
+
+#discover-pg .card{
+  flex-direction: column;
+  max-width: 500px;
+
+  /* spacing */
+  margin: 20px;
+}
+
+#image-container{
+  /* spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+
+  /* appearance */
+  background-color: #121212;
+}
+
+#image-container img{
+  width: 90%;
+  height: auto;
+  padding: 10px;
+}
+
+
+
+
+
+/* discover */
 
 /* footer CSS */
 
@@ -292,9 +409,17 @@ footer p {
     padding: 20px;
   }
 
+  main {
+    min-height: 1500px;
+    /* min-height: 100; */
+  }
+
   #menu {
     display: none;
   }
+
+    
+  /* chamber css */
 
   #events {
     background-color: #121212;
@@ -322,11 +447,37 @@ footer p {
     margin-bottom: 60px;
   }
 
+  #spotlight-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .event {
     outline: 1px solid var(--accent2);
+  
   }
 
   #weather {
     margin-left: 2%;
+  }
+
+  /* join.html css */
+
+  #joinpg {
+    flex-direction: row;
+  }
+
+  #join-form {
+    width: 30%;
+  }
+
+  /* discover CSS */
+  #discover-pg {
+    flex-direction: row;
+    
+  }
+
+  #discover-pg #info-card-container{
+    grid-template-rows: .2fr .5fr;
   }
 }

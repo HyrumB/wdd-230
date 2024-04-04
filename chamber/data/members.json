@@ -6,7 +6,7 @@
       "phoneNumber": "+1 650 253 8000",
       "websiteUrl": "https://www.apple.com",
       "image": {
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_logo_Think_Different_vectorized.svg/320px-Apple_logo_Think_Different_vectorized.svg.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Apple_Arcade_logo_hangug-eo.svg/320px-Apple_Arcade_logo_hangug-eo.svg.png",
         "fileName": "technovation.png"
       },
       "membershipLevel": "gold"
@@ -17,7 +17,7 @@
       "phoneNumber": "+1 888-280-4331",
       "websiteUrl": "https://www.amazon.com",
       "image": {
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/603px-Amazon_logo.svg.png?20220213013322",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png",
         "fileName": "amazon.jpg"
       },
       "membershipLevel": "silver"
@@ -61,7 +61,7 @@
       "phoneNumber": "+1 650-543-0000",
       "websiteUrl": "https://www.facebook.com",
       "image": {
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Meta_Logo.jpg/320px-Meta_Logo.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/320px-Meta_Platforms_Inc._logo.svg.png",
         "fileName": "meta.png"
       },
       "membershipLevel": "silver"

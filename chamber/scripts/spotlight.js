@@ -35,7 +35,8 @@ function displaySpotLightedMembers(data) {
 
   // display randos
   let company = list[num1];
-
+  //------------------ #1 ---------------------------------
+  const logocon1 = document.createElement("div");
   const logo1 = document.createElement("img");
   const info1 = document.createElement("div");
   const name1 = document.createElement("p");
@@ -48,8 +49,8 @@ function displaySpotLightedMembers(data) {
 
   logo1.src = company.image.imageUrl;
   logo1.alt = company.image.fileName;
-//   logo1.width = 100;
-//   logo1.height = 50;
+  //   logo1.width = 100;
+  //   logo1.height = 50;
 
   name1.textContent = company.name;
   info1.appendChild(name1);
@@ -64,9 +65,14 @@ function displaySpotLightedMembers(data) {
   url1.textContent = "Visit Website";
   info1.appendChild(url1);
 
-  parent.appendChild(logo1);
+  logocon1.appendChild(logo1);
+  parent.appendChild(logocon1);
   parent.appendChild(info1);
 
+  logocon1.classList.add("img-container");
+
+  // ----------------- #2 ---------------------------------
+  const logocon2 = document.createElement("div");
   const logo2 = document.createElement("img");
   const info2 = document.createElement("div");
   const name2 = document.createElement("p");
@@ -79,8 +85,8 @@ function displaySpotLightedMembers(data) {
 
   logo2.src = company.image.imageUrl;
   logo2.alt = company.image.fileName;
-//   logo2.width = 100;
-//   logo2.height = 50;
+  //   logo2.width = 100;
+  //   logo2.height = 50;
 
   name2.textContent = company.name;
   info2.appendChild(name2);
@@ -95,10 +101,17 @@ function displaySpotLightedMembers(data) {
   url2.textContent = "Visit Website";
   info2.appendChild(url2);
 
-  parent.appendChild(logo2);
+  logocon2.appendChild(logo2);
+  parent.appendChild(logocon2);
   parent.appendChild(info2);
 
+  logocon2.classList.add("img-container");
+
+  // ----------------- #3 ---------------------------------
+
+  const logocon3 = document.createElement("div");
   const logo3 = document.createElement("img");
+
   const info3 = document.createElement("div");
   const name3 = document.createElement("p");
   const number3 = document.createElement("p");
@@ -110,9 +123,9 @@ function displaySpotLightedMembers(data) {
 
   logo3.src = company.image.imageUrl;
   logo3.alt = company.image.fileName;
-//   logo3.width = 100;
-//   logo3.height = 50;
-  
+  //   logo3.width = 100;
+  //   logo3.height = 50;
+
   name3.textContent = company.name;
   info3.appendChild(name3);
 
@@ -126,14 +139,17 @@ function displaySpotLightedMembers(data) {
   url3.textContent = "Visit Website";
   info3.appendChild(url3);
 
-  parent.appendChild(logo3);
+  logocon3.appendChild(logo3);
+  parent.appendChild(logocon3);
   parent.appendChild(info3);
 
-  // image
-  // compay name
-  // location
-  // number
-  // URL
+  logocon3.classList.add("img-container");
 }
 
 getMembers();
+
+// image
+// compay name
+// location
+// number
+// URL
