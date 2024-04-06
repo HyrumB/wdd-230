@@ -46,28 +46,50 @@
     <main id="joinpg">
       <div id="join-form">
         <form action="process_form.php" method="post">
-
           <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name=" lastname" required  />
+          <input type="text" id="lastName" name=" lastname" required />
 
           <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstname" required  />
+          <input type="text" id="firstName" name="firstname" required />
 
           <label for="title">Title/Position:</label>
-          <input type="text" id="title" name="title" required  />
+          <input type="text" id="title" name="title" required />
 
           <label for="email">Email:</label>
           <input
             type="email"
             id="email"
             name="email"
-            required 
+            required
             pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
             title="Please enter a valid email address"
           />
 
-          <label
-            ><input
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Please enter a valid phone number"
+          />
+
+          <label for="company-name">Company Name:</label>
+          <input type="text" id="company-name" name="company-name" />
+
+          <label for="company-description">Company Description:</label>
+          <textarea
+            name="company-description"
+            id="company-description"
+            rows="10"
+          ></textarea>
+
+          <label for="form_load_time">Form Load Time:</label>
+          <input type="hidden" id="form_load_time" name="form_load_time" />
+
+          <label>
+            <input
               id="baseMembership"
               type="radio"
               name="BaseMembership"
@@ -77,42 +99,47 @@
           <label><input id="silver" type="radio" name="silver" />Silver</label>
           <label><input id="gold" type="radio" name="Gold" />Gold</label>
 
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
         </form>
       </div>
 
       <div id="description">
-        <h1>Gold</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
-          porttitor lacus luctus accumsan. Mi tempus imperdiet nulla malesuada
-          pellentesque elit eget.
-        </p>
-
-        <h2>Silver</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
-          porttitor lacus luctus accumsan. Mi tempus imperdiet nulla malesuada
-          pellentesque elit eget..
-        </p>
-
-        <h2>Bronze</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
-          porttitor lacus luctus accumsan. Mi tempus imperdiet nulla malesuada
-          pellentesque elit eget.
-        </p>
-
-        <h2>Non-profit</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
-          porttitor lacus luctus accumsan. Mi tempus imperdiet nulla malesuada
-          pellentesque elit eget.
-        </p>
+        <h3>Gold Tier Member</h3>
+        <ul>
+          <li>Prominent Member Directory Listing: Gain maximum visibility with a premium listing in our online member directory, including enhanced profile options and increased searchability.</li>
+          <li>Lead Generation Opportunities: Participate in exclusive programs designed to connect you with potential customers and generate qualified leads.</li>
+          <li>Member-to-Member Discounts: Enjoy significant savings on products and services offered by fellow chamber members.</li>
+          <li>Priority Access to Events & Programs: Be the first to register for highly sought-after events, workshops, and networking opportunities.</li>
+          <li>Ambassador Program Invitation: Become an ambassador for the chamber and gain valuable leadership experience while promoting your business.</li>
+        </ul>
+        
+        <h3>Silver Tier Member</h3>
+        <ul>
+          <li>Standard Member Directory Listing: Get listed in our comprehensive online member directory, searchable by potential customers.</li>
+          <li>Discounted Event Registration:  Receive a discount on registration fees for chamber events, workshops, and networking opportunities.</li>
+          <li>Member-to-Member Referral Network:  Tap into a network of trusted businesses through member referrals and recommendations.</li>
+          <li>Monthly E-Newsletter: Stay informed about upcoming events, industry trends, and advocacy efforts with our exclusive member newsletter.</li>
+          <li>Legislative Advocacy Updates: Gain insights on local and regional legislation impacting your business through chamber updates.</li>
+        </ul>
+        
+        <h3>Bronze Tier Member</h3>
+        <ul>
+          <li>Basic Member Directory Listing: Gain a basic listing in our online member directory, connecting you with potential customers.</li>
+          <li>Member Discounts: Enjoy exclusive discounts on chamber-sponsored events and programs.</li>
+          <li>Access to Member Resources:  Utilize valuable online resources and tools to support your business growth.</li>
+          <li>Networking Opportunities: Attend select chamber events and connect with other businesses in the community.</li>
+          <li>Ribbon Cutting Ceremony: Celebrate your grand opening or relocation with a ribbon-cutting ceremony facilitated by the chamber (upon request).</li>
+        </ul>
+        
+        <h3>Non-Profit Partner</h3>
+        <ul>
+          <li>Joint Advocacy Efforts: Collaborate with the chamber on advocacy initiatives that benefit both businesses and non-profit organizations.</li>
+          <li>Promotional Opportunities: Leverage the chamber's communication channels to raise awareness for your non-profit's mission and programs.</li>
+          <li>Volunteer Recruitment Support:  Gain access to the chamber's network to connect with potential volunteers who can support your organization.</li>
+          <li>Discounted Chamber Events:  Receive discounted registration fees for relevant chamber events to showcase your non-profit's work.</li>
+          <li>Grant Opportunities:  Be eligible to apply for grants offered by the chamber or its partners to support your non-profit's goals.</li>
+        </ul>
+        
       </div>
     </main>
 
@@ -126,5 +153,7 @@
     </footer>
     <script src="scripts/form.js"></script>
     <script src="scripts/buttons.js"></script>
+    <script src="scripts/getDates.js"></script>
+
   </body>
 </html>

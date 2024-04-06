@@ -254,6 +254,7 @@ main {
 }
 
 /* join page CSS */
+
 #joinpg {
   display: flex;
   flex-direction: column;
@@ -265,7 +266,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   background-color: var(--accent1);
   border-radius: 30px;
   padding: 10px;
@@ -276,24 +277,26 @@ main {
 
 #submit {
   margin-top: 20px;
+  color: var( --background);
+  background-color: var( --accent3);
+  border-radius: 10px;
+  padding: 10px;
 }
 
+#submit:hover {
+  color: var( --accent3);
+  background-color: var( --accent2);
+}
 
 #description {
   display: flex;
   flex-direction: column;
-  background-color: var(--accent1);
+  background-color: var(--accent2);
   border-radius: 30px;
   padding: 10px;
   margin: 20px;
 
 }
-
-
-
-
-/* form CSS */
-
 
 form {
   /* apperance */
@@ -301,6 +304,7 @@ form {
   flex-direction: column;
   height: auto;
   max-width: 400px;
+
   
   /* spacing */
   padding-top: 20px;
@@ -311,7 +315,16 @@ label {
   margin-top: 35px;
 }
 
+input {
+  padding: 10px;
+  border-radius:5px ;
+}
+
+
+
+
 /* landing page */
+
 #landing-pg {
   display: flex;
   flex-direction: column;
