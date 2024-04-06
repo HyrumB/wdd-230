@@ -19,6 +19,8 @@ function displaySpotLightedMembers(data) {
         // Create elements with class names matching their variable names
         const logo = document.createElement("img");
         logo.className = "logo";
+        logo.loading = "lazy"; // Add loading="lazy" attribute
+        logo.alt = company.image.fileName;
         const info = document.createElement("div");
         info.className = "info";
         const name = document.createElement("p");

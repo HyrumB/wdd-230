@@ -336,7 +336,7 @@ input {
 
 
 
-/* directory */
+/* discover */
 
 #discover-pg{
   display: flex;
@@ -423,7 +423,7 @@ input {
   padding: 10px;
   margin: 20px;
 
-  height: fit-content;
+  min-height: 300px;
   min-width: 500px;
 }
 
