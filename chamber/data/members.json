@@ -28,7 +28,7 @@
       "phoneNumber": "+1 415-833-6200",
       "websiteUrl": "https://www.wikimedia.org",
       "image": {
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wikimedia_Foundation_logo_-_vertical.svg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Wikimedia_Korea_logo_-_Horizontal.png/320px-Wikimedia_Korea_logo_-_Horizontal.png",
         "fileName": "wikimedia.svg"
       },
       "membershipLevel": "non-profit"
@@ -68,7 +68,7 @@
     },
     {
       "name": "NOT Linux Foundation",
-      "address": "The Linux Foundation, 650 Castro Street Suite 600, Mountain View, CA 94041",
+      "address": "650 Castro Street Suite 600, Mountain View, CA 94041",
       "phoneNumber": "+1 650-810-0890",
       "websiteUrl": "https://www.linuxfoundation.org",
       "image": {

@@ -43,9 +43,13 @@
       </nav>
     </header>
 
-    <main>
+    <main id="directory-pg">
+      <div>
+        <button id="list"><img src="images/list_icon.png" alt="list" /></button>
+        <button id="grid"><img src="images/grid_icon.png" alt="grid" /></button>
+      </div>
+      <div id="company-container" class="grid"></div>
     </main>
-
     <footer>
       <p id="year">
         &copy; | Toronto Chamber Directory Page | Hyrum Bullock | Current Date:
@@ -54,6 +58,7 @@
       <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/directory.js"></script>
     <script src="scripts/buttons.js"></script>
     <script src="scripts/getDates.js"></script>
   </body>
