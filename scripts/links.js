@@ -9,20 +9,29 @@ async function getLinks() {
   displayLinks(data);
 }
 
-async function displayLinks(data) {
-  console.log(data);
+function displayLinks(data) {
+  const weekList = document.querySelector('#weekList');
+  for (let i = 0; i < weeks.week.length; i++) {
+      
+      const week = document.createElement('li');
+      week.textContent = `${weeks.weeks[i].week} :`;
+      weekList.appendChild(week);
+      for (let j = 0; j < weeks.weeks[i].links.length; j++) {
 
-  const ul = document.querySelector("#activities");
-  const bar = " | ";
+          const link = document.createElement('a');
+          link.href = `${weeks.weeks[i].links[j].url}`;
+          link.textContent = `${weeks.weeks[i].links[j].title} |`;
+          if (j === weeks.weeks[i].links.length - 1) {
+              link.textContent = `${weeks.weeks[i].links[j].title}`;
+          }
+          week.appendChild(link);
 
-  for (const link of data) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = `${link.week}`;
-    a.textContent = link.title;
-    li.appendChild(a);
-    ul.appendChild(li);
+
+      }
   }
+  console.log(weekList);
+
 }
+
 
 getLinks();
