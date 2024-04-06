@@ -576,4 +576,12 @@ footer p {
 
     outline: 1px solid var(--accent3);
   }
+
+  /* directory CSS */
+
+  #company-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
