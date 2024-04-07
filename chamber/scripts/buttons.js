@@ -6,7 +6,7 @@ hamButton.addEventListener("click", () => {
   navigation.classList.toggle("hidden");
 });
 
-const bsnner = document.querySelector(".banner"); // Select the element with class "banner"
+const banner = document.querySelector(".banner"); // Select the element with class "banner"
 
 if (banner) {
   const closeButton = document.querySelector("#closebanner");
