@@ -135,7 +135,51 @@ main {
   justify-content: center;
   margin: 0;
   padding: 0;
+
 }
+
+#hero-text {
+  /* background-color: var(--accent2); */
+
+  /* spacing */
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 20%;
+  width: 100%;
+
+  /* position */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+
+  position: absolute;
+  /* top: 20%;
+  left: 20%; */
+
+}
+
+#hero-text h2{
+  margin: 0px;
+}
+
+#hero-text button {
+  align-self: center;
+  background-color: var(--accent3);
+  color: var(--text);
+
+  /* spacing */
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
 
 .heroPhoto img {
   overflow: hidden;
@@ -512,6 +556,15 @@ footer p {
     
   /* chamber css */
 
+
+  #hero-text {
+    background-color: var(--accent2);
+    height: auto;
+    width: auto;
+    top: 20%;
+    left: 20%;
+  }
+  
   #events {
     background-color: #121212;
     margin: 0;

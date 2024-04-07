@@ -6,9 +6,9 @@ hamButton.addEventListener("click", () => {
   navigation.classList.toggle("hidden");
 });
 
-const element = document.querySelector(".banner"); // Select the element with class "banner"
+const bsnner = document.querySelector(".banner"); // Select the element with class "banner"
 
-if (element) {
+if (banner) {
   const closeButton = document.querySelector("#closebanner");
   const banner = document.querySelector(".banner");
   closeButton.addEventListener("click", () => {
@@ -16,4 +16,13 @@ if (element) {
   });
 } else {
   console.log("No element with class 'banner' found");
+}
+
+joinbtn = document.querySelector("#join");
+if (joinbtn) {
+  const joinButton = document.querySelector("#join");
+
+  joinButton.addEventListener("click", () => {
+    window.location.href = "join.html";
+  });
 }
