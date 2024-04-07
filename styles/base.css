@@ -164,6 +164,7 @@ picture {
 
 li,
 a {
+  text-align: start;
   text-decoration: none;
   color: var(--accent3);
 }
